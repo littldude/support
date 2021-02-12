@@ -53,7 +53,7 @@
     src="https://www.facebook.com/tr?id=1016908631673402&ev=PageView&noscript=1"
     />
 </noscript> -->
-    <title>Опора на себя: как воспитать в себе взрослого</title>
+    <title>Активация внутреннего взрослого</title>
 </head>
 <body>
     <header class="header">
@@ -99,7 +99,7 @@
                         </div>
                         <div class="intro__block--item">
                             <svg><use href="sprite.svg#telegram"></use></svg>
-                            <p class="text text--block">100 уроков в Telegram-чате</p>
+                            <p class="text text--block text--telegram">100 уроков в Telegram-чате</p>
                         </div>
                         <a class="button button--intro" href="#buy">Подробнее</a>
                     </div>
@@ -149,7 +149,7 @@
                     <p class="text text--item">Кто я за пределами социальных ролей и долженствований? Как быть собой, как научиться стратегически смотреть на свою жизнь.</p>
                 </div>
             </div>
-            <a class="button button--buy" href="buy">Купить</a>
+            <a class="button button--buy" href="#buy">Купить</a>
         </div>
     </section>
     <section class="about">
@@ -218,7 +218,7 @@
     </section>
     <section class="buy">
         <div class="container">
-            <h2 class="title title--buy">Выбирайте подходящий вариант обучения</h2>
+            <h2 class="title title--buy" id="buy">Выбирайте подходящий вариант обучения</h2>
             <div class="buy__inner">
                 <div class="buy__inner--item">
                     <p class="subtitle subtitle--buy">Курс «Как воспитать в себе взрослого»</p>
@@ -262,5 +262,23 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script> 
 </body>
 </html>

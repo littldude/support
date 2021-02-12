@@ -664,6 +664,9 @@ a {
   .text--block {
     text-align: left;
   }
+  .text--telegram {
+    width: 200px;
+  }
 
   .intro__inner {
     position: static;
@@ -866,6 +869,9 @@ a {
   .text--about {
     margin-bottom: 10px;
   }
+  .text--telegram {
+    width: 124px;
+  }
 
   .subtitle {
     font-size: 22px;
@@ -883,7 +889,8 @@ a {
     padding-top: 0;
   }
   .intro__block--item {
-    width: 220px;
+    width: auto;
+    justify-content: center;
   }
 
   .program {
@@ -1009,6 +1016,10 @@ a {
   }
 }
 @media (max-width: 375px) {
+  .title--buy {
+    padding: 0 4%;
+  }
+
   .text--intro {
     line-height: 20px;
   }
@@ -1036,6 +1047,10 @@ a {
   }
 }
 @media (max-width: 320px) {
+  .title--buy {
+    padding: 0 3%;
+  }
+
   .text--intro {
     padding: 0 4%;
   }

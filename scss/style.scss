@@ -562,6 +562,7 @@ a {
         }
     }
     small {
+        width: 60%;
         display: block;
         margin: 0 auto 10px auto;
         font-weight: 400;
@@ -898,6 +899,9 @@ a {
                    margin-bottom: 0;
                }
            }
+        }
+        small {
+            width: auto;
         }
     }
     .inf {

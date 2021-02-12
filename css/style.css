@@ -482,6 +482,7 @@ a {
   color: #C1A073;
 }
 .buy small {
+  width: 60%;
   display: block;
   margin: 0 auto 10px auto;
   font-weight: 400;
@@ -743,6 +744,9 @@ a {
   }
   .buy__inner--item:last-of-type {
     margin-bottom: 0;
+  }
+  .buy small {
+    width: auto;
   }
 
   .inf__text::before {

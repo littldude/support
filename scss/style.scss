@@ -1,17 +1,4 @@
 $dark: #2C1410;
-// @font-face {
-//         font-family: 'Lora'; 
-//         font-style: normal;
-//         font-weight: bold;
-//         src: url('../fonts/Lora-Bold.woff');
-// }
-// @font-face {
-//     font-family: 'Lora'; 
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url('../fonts/Lora-Regular.woff');
-// }
-
 *,
 ::after,
 ::before {
@@ -148,7 +135,7 @@ a {
     }
 }
 .text {
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 23px; 
     &--intro {
@@ -495,7 +482,7 @@ a {
 .inf {
     overflow: hidden;
     position: relative;
-    padding: 209px 0 290px 0;
+    padding: 209px 0 130px 0;
     &__text {
         width: 480px;
         margin: 0 auto;
@@ -511,7 +498,7 @@ a {
             content: url('../img/inf/inf-img-2.svg');
             display: block;
             position: absolute;
-            bottom: 3%;
+            bottom: 12%;
             left: 70%;
             z-index: -1;
         }

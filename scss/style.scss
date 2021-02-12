@@ -1,20 +1,37 @@
 $dark: #2C1410;
+// @font-face {
+//     font-family: 'Lora'; 
+//     font-style: normal;
+//     font-weight: 400;
+//     src: local('Times New Roman'),
+//          url('../fonts/Lora-VariableFont_wght.ttf');
+//     font-display: swap;
+// }
+// @font-face {
+//     font-family: 'Lora'; 
+//     font-style: normal;
+//     font-weight: 600;
+//     src: local('Times New Roman'),
+//          url('../fonts/Lora-VariableFont_wght.ttf');
+//     font-display: swap;
+// }
+@font-face {
+        font-family: 'Lora'; 
+        font-style: normal;
+        font-weight: 600;
+        src: local('Times New Roman'),
+             url('../fonts/Lora-Bold.woff');
+        font-display: swap;
+}
 @font-face {
     font-family: 'Lora'; 
     font-style: normal;
     font-weight: 400;
     src: local('Times New Roman'),
-         url('../fonts/Lora-VariableFont_wght.ttf');
+         url('../fonts/Lora-Regular.woff');
     font-display: swap;
 }
-@font-face {
-    font-family: 'Lora'; 
-    font-style: normal;
-    font-weight: 600;
-    src: local('Times New Roman'),
-         url('../fonts/Lora-VariableFont_wght.ttf');
-    font-display: swap;
-}
+
 *,
 ::after,
 ::before {
@@ -156,6 +173,8 @@ a {
     font-size: 18px;
     line-height: 23px; 
     &--intro {
+        font-size: 20px;
+        line-height: 23px;
         margin: 25px 0 40px 0;
         width: 420px;
     }
@@ -495,7 +514,7 @@ a {
 .inf {
     overflow: hidden;
     position: relative;
-    padding: 209px 0 131px 0;
+    padding: 209px 0 290px 0;
     &__text {
         width: 480px;
         margin: 0 auto;
@@ -503,16 +522,16 @@ a {
             content: url('../img/inf/inf-img-1.svg');
             display: block;
             position: absolute;
-            top: -275px;
-            left: 205px;
+            top: 3%;
+            right: 70%;
             z-index: -1;
         }
         &::after {
             content: url('../img/inf/inf-img-2.svg');
             display: block;
             position: absolute;
-            bottom: -303px;
-            right: 208px;
+            bottom: 3%;
+            left: 70%;
             z-index: -1;
         }
     }
@@ -576,13 +595,19 @@ a {
     }
     small {
         display: block;
-        margin: 0 auto;
-        width: 469px;
+        margin: 0 auto 10px auto;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 20px;
         text-align: center;
         color: #2C1410; 
+        .link {
+            color: #C1A073;
+            &:hover {
+                color: $dark;
+                transition: .2s linear;
+            }
+        }
     }
 }
 .footer {
@@ -655,10 +680,10 @@ a {
     .inf {
         &__text {
             &::before {
-                left: -75px;
+                left: 8%;
             }
             &::after {
-                right: -85px;
+                right: -1%;
             }
         }
     }
@@ -1135,7 +1160,7 @@ a {
         small {
             width: auto;
             text-align: center;
-            font-size: 16px;
+            font-size: 12px;
         }
     }
     .about {
@@ -1234,9 +1259,6 @@ a {
             &--item {
                 width: 100%;
             }
-        }
-        small {
-            font-size: 12px;
         }
     }
     .inf {

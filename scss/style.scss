@@ -166,7 +166,7 @@ a {
     &--header {
         margin-bottom: 30px;
         text-align: center;
-        font-weight: bold;
+        font-weight: 600;
     }
     &--about {
         margin-bottom: 25px;
@@ -193,7 +193,7 @@ a {
         margin-bottom: 28px;
     }
     &--bold {
-        font-weight: bold;
+        font-weight: 600;
     }
 }
 .button {
@@ -568,7 +568,7 @@ a {
             &__new {
                 display: block;
                 margin-bottom: 60px;
-                font-weight: bold;
+                font-weight: 600;
                 text-align: center;
                 color: #C1A073;
             }

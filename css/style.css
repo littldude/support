@@ -420,7 +420,6 @@ a {
   display: block;
   position: absolute;
   width: 518px;
-  height: 704px;
   right: 630px;
   bottom: -100px;
   z-index: 1;
@@ -846,13 +845,6 @@ a {
   .inf__text {
     width: 70%;
   }
-  .inf__text::before {
-    top: 4%;
-    left: 4%;
-  }
-  .inf__text::after {
-    right: 4%;
-  }
 }
 @media (max-width: 568px) {
   .title {
@@ -1021,6 +1013,16 @@ a {
 
   .about__item--left {
     padding: 30px 0 170px 0;
+  }
+
+  .inf__text::before {
+    top: 3%;
+    left: 4%;
+  }
+  .inf__text::after {
+    right: 4%;
+    bottom: 5%;
+    left: auto;
   }
 }
 @media (max-width: 375px) {

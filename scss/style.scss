@@ -1,35 +1,15 @@
 $dark: #2C1410;
-// @font-face {
-//     font-family: 'Lora'; 
-//     font-style: normal;
-//     font-weight: 400;
-//     src: local('Times New Roman'),
-//          url('../fonts/Lora-VariableFont_wght.ttf');
-//     font-display: swap;
-// }
-// @font-face {
-//     font-family: 'Lora'; 
-//     font-style: normal;
-//     font-weight: 600;
-//     src: local('Times New Roman'),
-//          url('../fonts/Lora-VariableFont_wght.ttf');
-//     font-display: swap;
-// }
 @font-face {
         font-family: 'Lora'; 
         font-style: normal;
         font-weight: bold;
-        src: local('Times New Roman'),
-             url('../fonts/Lora-Bold.woff');
-        font-display: swap;
+        src: url('../fonts/Lora-Bold.woff');
 }
 @font-face {
     font-family: 'Lora'; 
     font-style: normal;
     font-weight: 400;
-    src: local('Times New Roman'),
-         url('../fonts/Lora-Regular.woff');
-    font-display: swap;
+    src: url('../fonts/Lora-Regular.woff');
 }
 
 *,
@@ -45,7 +25,6 @@ html {
 body {
     margin: 0;
     font-family: 'Lora';
-    font-weight: 400;
     color: $dark;
     background-color: #ffffff;
 }
@@ -193,6 +172,7 @@ a {
         margin-bottom: 25px;
     }
     &--autor {
+        line-height: 28px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -313,6 +293,7 @@ a {
     }
 }
 .program {
+    overflow: hidden;
     padding: 118px 0 70px 0;
     &__inner {
         position: relative;
@@ -498,7 +479,6 @@ a {
         position: relative;
         margin-left: auto;
         width: 580px;
-        height: 606px;
         padding: 42px 58px 60px 55px;
         background-color: #ffffff;
         z-index: 100;
@@ -506,6 +486,8 @@ a {
     &__img {
         display: block;
         position: absolute;
+        width: 518px;
+        height: 704px;
         right: 630px;
         bottom: -100px;
         z-index: 1;
@@ -522,7 +504,7 @@ a {
             content: url('../img/inf/inf-img-1.svg');
             display: block;
             position: absolute;
-            top: 3%;
+            top: 10%;
             right: 70%;
             z-index: -1;
         }

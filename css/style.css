@@ -599,6 +599,7 @@ a {
     content: url("../img/inf/inf-mob-2.svg");
     right: 10%;
     bottom: 5%;
+    left: auto;
   }
 }
 @media (max-width: 991px) {

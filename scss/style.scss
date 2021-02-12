@@ -395,7 +395,7 @@ a {
             display: block;
             position: absolute;
             right: -62px;
-            top: -95px; 
+            top: 49px; 
         }
     }
     &__text {
@@ -416,6 +416,7 @@ a {
     }
 }
 .inf {
+    overflow: hidden;
     position: relative;
     padding: 209px 0 131px 0;
     &__text {
@@ -425,15 +426,17 @@ a {
             content: url('../img/inf/inf-img-1.svg');
             display: block;
             position: absolute;
-            top: -44%;
-            left: 18%;
+            top: -275px;
+            left: 444px;
+            z-index: -1;
         }
         &::after {
             content: url('../img/inf/inf-img-2.svg');
             display: block;
             position: absolute;
-            bottom: -52%;
-            right: 18%;
+            bottom: -303px;
+            right: 400px;
+            z-index: -1;
         }
     }
 }
@@ -542,7 +545,18 @@ a {
         }
     }
 }
-
+@media (max-width: 1366px) {
+    .inf {
+        &__text {
+            &::before {
+                left: -75px;
+            }
+            &::after {
+                right: -85px;
+            }
+        }
+    }
+}
 @media (max-width: 1112px) {
     .container {
         padding: 0 1%;
@@ -577,6 +591,20 @@ a {
             }
         }
     }
+    .inf {
+        &__text {
+            &::before {
+                content: url('../img/inf/inf-mob-1.svg');
+                top: 10%;
+                left: 10%;
+            }
+            &::after {
+                content: url('../img/inf/inf-mob-2.svg');
+                right: 10%;
+                bottom: 5%;
+            }
+        }
+    }
 }
 @media (max-width: 991px) {
     .header {
@@ -598,6 +626,22 @@ a {
         }
         &__img {
             right: 586px;
+        }
+    }
+    .about {
+        &__inner {
+            &--item {
+                width: 100%;
+                &__left {
+                    width: 100%;
+                }
+            }
+        }
+        &__item {
+            width: 100%;
+            &--left {
+                width: 100%;
+            }
         }
     }
 }
@@ -716,6 +760,47 @@ a {
            }
         }
     }
+    .inf {
+        &__text {
+            &::before {
+                top: 1%;
+                left: 1%;
+            }
+            &::after {
+                right: 1%;
+                bottom: 5%;
+            }
+        }
+    }
+    .about {
+        &__inner {
+            &--item {
+                padding: 500px 0 0 0;
+                &__left {
+                    padding: 30px 0 250px 0;
+                    &::after {
+                        top: 60%;
+                    }
+                }
+            }
+        }
+        &__item {
+            padding: 350px 0 0 0;
+            &--left {
+                padding: 30px 0 280px 0;
+            }
+        }
+        &__text {
+            width: auto;
+            margin-left: 0;
+            padding: 0 15%;
+            &--left {
+                width: auto;
+                margin-right: 0;
+                padding: 0 15%;
+            }
+        }
+    }
 }
 @media (max-width: 768px) {
     .footer {
@@ -723,6 +808,35 @@ a {
             &--item {
                 width: 50px;
                 height: 50px;
+            }
+        }
+    }
+    .about {
+        &__inner {
+            &--item {
+                padding: 365px 0 0 0;
+                &::before {
+                    content: url('../img/about/about-mob-1.svg');
+                }
+                &__left {
+                    padding: 30px 0 190px 0;
+                    &::after {
+                        content: url('../img/about/about-mob-2.svg');
+                        top: 69%;
+                    }
+                }
+            }
+        }
+        &__item {
+            padding: 170px 0 0 0;
+            &::before {
+                content: url('../img/about/about-mob-3.svg');
+            }
+            &--left {
+                padding: 30px 0 130px 0;
+                &::after {
+                    content: url('../img/about/about-mob-4.svg');
+                }
             }
         }
     }
@@ -748,6 +862,19 @@ a {
             width: 70%;
         }
     }
+    .inf {
+        padding: 280px 0;
+        &__text {
+            width: 70%;
+            &::before {
+                top: 4%;
+                left: 4%;
+            }
+            &::after {
+                right: 4%;
+            }
+        }
+    }
 }
 @media (max-width: 568px) {
     .title {
@@ -767,14 +894,20 @@ a {
         &--autor {
             margin-bottom: 28px;
         }
+        &--about {
+            margin-bottom: 10px;
+        }
     }
     .subtitle {
         font-size: 22px;
         line-height: 28px;
+        &--about {
+            margin-bottom: 23px;
+        }
     }
     .button {
         &--intro {
-            margin-top: 30px;
+            margin-top: 15px;
         }
     }
     .intro {
@@ -800,6 +933,7 @@ a {
         padding: 0;
         background-color: #ffffff;
         &__inner {
+            margin-top: 50px;
             background-color: #EEE6DC;
         }
         &__text {
@@ -848,6 +982,15 @@ a {
             width: auto;
             text-align: center;
             font-size: 16px;
+        }
+    }
+    .about {
+        padding: 70px 0 0 0;
+        &__text {
+            padding: 0 10%;
+            &--left {
+                padding: 0 10%;
+            }
         }
     }
 }
@@ -899,8 +1042,20 @@ a {
             }
         }
     }
+    .about {
+        &__item {
+            &--left {
+                padding: 30px 0 170px 0;
+            }
+        }
+    }
 }
 @media (max-width: 375px) {
+    .text {
+        &--intro {
+            line-height: 20px;
+        }
+    }
     .program {
         &__inner {
             &--item {
@@ -923,8 +1078,19 @@ a {
             font-size: 12px;
         }
     }
+    .inf {
+        padding: 280px 0;
+        &__text {
+            width: 80%;
+        }
+    }
 }
 @media (max-width: 320px) {
+    .text {
+        &--intro {
+            padding: 0 4%;
+        }
+    }
     .intro {
         &__img {
             width: 288px;
@@ -942,6 +1108,17 @@ a {
         &--buy {
             width: 260px;
             height: 65px;
+        }
+    }
+    .about {
+        &__inner {
+            &--item {
+                &__left {
+                    &::after {
+                        top: 73%;
+                    }
+                }
+            }
         }
     }
 }

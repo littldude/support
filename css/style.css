@@ -405,7 +405,7 @@ a {
   display: block;
   position: absolute;
   right: -62px;
-  top: -95px;
+  top: 49px;
 }
 .autor__text {
   position: relative;
@@ -425,6 +425,7 @@ a {
 }
 
 .inf {
+  overflow: hidden;
   position: relative;
   padding: 209px 0 131px 0;
 }
@@ -436,15 +437,17 @@ a {
   content: url("../img/inf/inf-img-1.svg");
   display: block;
   position: absolute;
-  top: -44%;
-  left: 18%;
+  top: -275px;
+  left: 444px;
+  z-index: -1;
 }
 .inf__text::after {
   content: url("../img/inf/inf-img-2.svg");
   display: block;
   position: absolute;
-  bottom: -52%;
-  right: 18%;
+  bottom: -303px;
+  right: 400px;
+  z-index: -1;
 }
 
 .buy {
@@ -552,6 +555,14 @@ a {
   height: 100%;
 }
 
+@media (max-width: 1366px) {
+  .inf__text::before {
+    left: -75px;
+  }
+  .inf__text::after {
+    right: -85px;
+  }
+}
 @media (max-width: 1112px) {
   .container {
     padding: 0 1%;
@@ -583,6 +594,17 @@ a {
   .buy__inner--item {
     padding: 60px 65px;
   }
+
+  .inf__text::before {
+    content: url("../img/inf/inf-mob-1.svg");
+    top: 10%;
+    left: 10%;
+  }
+  .inf__text::after {
+    content: url("../img/inf/inf-mob-2.svg");
+    right: 10%;
+    bottom: 5%;
+  }
 }
 @media (max-width: 991px) {
   .header__call {
@@ -601,6 +623,19 @@ a {
   }
   .autor__img {
     right: 586px;
+  }
+
+  .about__inner--item {
+    width: 100%;
+  }
+  .about__inner--item__left {
+    width: 100%;
+  }
+  .about__item {
+    width: 100%;
+  }
+  .about__item--left {
+    width: 100%;
   }
 }
 @media (max-width: 834px) {
@@ -710,11 +745,72 @@ a {
   .buy__inner--item:last-of-type {
     margin-bottom: 0;
   }
+
+  .inf__text::before {
+    top: 1%;
+    left: 1%;
+  }
+  .inf__text::after {
+    right: 1%;
+    bottom: 5%;
+  }
+
+  .about__inner--item {
+    padding: 500px 0 0 0;
+  }
+  .about__inner--item__left {
+    padding: 30px 0 250px 0;
+  }
+  .about__inner--item__left::after {
+    top: 60%;
+  }
+  .about__item {
+    padding: 350px 0 0 0;
+  }
+  .about__item--left {
+    padding: 30px 0 280px 0;
+  }
+  .about__text {
+    width: auto;
+    margin-left: 0;
+    padding: 0 15%;
+  }
+  .about__text--left {
+    width: auto;
+    margin-right: 0;
+    padding: 0 15%;
+  }
 }
 @media (max-width: 768px) {
   .footer__link--item {
     width: 50px;
     height: 50px;
+  }
+
+  .about__inner--item {
+    padding: 365px 0 0 0;
+  }
+  .about__inner--item::before {
+    content: url("../img/about/about-mob-1.svg");
+  }
+  .about__inner--item__left {
+    padding: 30px 0 190px 0;
+  }
+  .about__inner--item__left::after {
+    content: url("../img/about/about-mob-2.svg");
+    top: 69%;
+  }
+  .about__item {
+    padding: 170px 0 0 0;
+  }
+  .about__item::before {
+    content: url("../img/about/about-mob-3.svg");
+  }
+  .about__item--left {
+    padding: 30px 0 130px 0;
+  }
+  .about__item--left::after {
+    content: url("../img/about/about-mob-4.svg");
   }
 }
 @media (max-width: 667px) {
@@ -731,6 +827,20 @@ a {
 
   .footer__link {
     width: 70%;
+  }
+
+  .inf {
+    padding: 280px 0;
+  }
+  .inf__text {
+    width: 70%;
+  }
+  .inf__text::before {
+    top: 4%;
+    left: 4%;
+  }
+  .inf__text::after {
+    right: 4%;
   }
 }
 @media (max-width: 568px) {
@@ -753,14 +863,20 @@ a {
   .text--autor {
     margin-bottom: 28px;
   }
+  .text--about {
+    margin-bottom: 10px;
+  }
 
   .subtitle {
     font-size: 22px;
     line-height: 28px;
   }
+  .subtitle--about {
+    margin-bottom: 23px;
+  }
 
   .button--intro {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   .intro__inner {
@@ -785,6 +901,7 @@ a {
     background-color: #ffffff;
   }
   .autor__inner {
+    margin-top: 50px;
     background-color: #EEE6DC;
   }
   .autor__text {
@@ -833,6 +950,16 @@ a {
     text-align: center;
     font-size: 16px;
   }
+
+  .about {
+    padding: 70px 0 0 0;
+  }
+  .about__text {
+    padding: 0 10%;
+  }
+  .about__text--left {
+    padding: 0 10%;
+  }
 }
 @media (max-width: 414px) {
   .text--autor {
@@ -876,8 +1003,16 @@ a {
     font-size: 18px;
     line-height: 21px;
   }
+
+  .about__item--left {
+    padding: 30px 0 170px 0;
+  }
 }
 @media (max-width: 375px) {
+  .text--intro {
+    line-height: 20px;
+  }
+
   .program__inner--item {
     width: 98%;
   }
@@ -892,8 +1027,19 @@ a {
   .buy small {
     font-size: 12px;
   }
+
+  .inf {
+    padding: 280px 0;
+  }
+  .inf__text {
+    width: 80%;
+  }
 }
 @media (max-width: 320px) {
+  .text--intro {
+    padding: 0 4%;
+  }
+
   .intro__img {
     width: 288px;
     height: 288px;
@@ -906,5 +1052,9 @@ a {
   .button--buy {
     width: 260px;
     height: 65px;
+  }
+
+  .about__inner--item__left::after {
+    top: 73%;
   }
 }

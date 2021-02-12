@@ -18,7 +18,7 @@ $dark: #2C1410;
 @font-face {
         font-family: 'Lora'; 
         font-style: normal;
-        font-weight: 600;
+        font-weight: bold;
         src: local('Times New Roman'),
              url('../fonts/Lora-Bold.woff');
         font-display: swap;
@@ -187,7 +187,7 @@ a {
     &--header {
         margin-bottom: 30px;
         text-align: center;
-        font-weight: 600;
+        font-weight: bold;
     }
     &--about {
         margin-bottom: 25px;
@@ -213,7 +213,7 @@ a {
         margin-bottom: 28px;
     }
     &--bold {
-        font-weight: 600;
+        font-weight: bold;
     }
 }
 .button {
@@ -587,7 +587,7 @@ a {
             &__new {
                 display: block;
                 margin-bottom: 60px;
-                font-weight: 600;
+                font-weight: bold;
                 text-align: center;
                 color: #C1A073;
             }

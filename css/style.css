@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Lora";
   font-style: normal;
-  font-weight: 600;
+  font-weight: bold;
   src: local("Times New Roman"), url("../fonts/Lora-Bold.woff");
   font-display: swap;
 }
@@ -160,7 +160,7 @@ a {
 .text--header {
   margin-bottom: 30px;
   text-align: center;
-  font-weight: 600;
+  font-weight: bold;
 }
 .text--about {
   margin-bottom: 25px;
@@ -182,7 +182,7 @@ a {
   margin-bottom: 28px;
 }
 .text--bold {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .button {
@@ -490,7 +490,7 @@ a {
 .buy__inner--price__new {
   display: block;
   margin-bottom: 60px;
-  font-weight: 600;
+  font-weight: bold;
   text-align: center;
   color: #C1A073;
 }

@@ -1,16 +1,16 @@
 $dark: #2C1410;
-@font-face {
-        font-family: 'Lora'; 
-        font-style: normal;
-        font-weight: bold;
-        src: url('../fonts/Lora-Bold.woff');
-}
-@font-face {
-    font-family: 'Lora'; 
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/Lora-Regular.woff');
-}
+// @font-face {
+//         font-family: 'Lora'; 
+//         font-style: normal;
+//         font-weight: bold;
+//         src: url('../fonts/Lora-Bold.woff');
+// }
+// @font-face {
+//     font-family: 'Lora'; 
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../fonts/Lora-Regular.woff');
+// }
 
 *,
 ::after,
@@ -24,7 +24,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Lora';
+    font-family: 'Lora', serif;
     color: $dark;
     background-color: #ffffff;
 }
